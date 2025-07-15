@@ -73,26 +73,26 @@ Google account (for Sheets integration, optional)
 
 🔹 scraper.py
 
-    Fetches channel metadata, video statistics
+   Fetches channel metadata, video statistics
 
-    Saves data into CSV files (channel_stats.csv, video_stats.csv, etc.)
+   Saves data into CSV files (channel_stats.csv, video_stats.csv, etc.)
 
 
 🔹 sentiment_analysis.py
 
-    Analyzes comments on recent videos
+   Analyzes comments on recent videos
 
-    Uses TextBlob for polarity and subjectivity scores
+   Uses TextBlob for polarity and subjectivity scores
 
 
 🔹 forecasting.py
 
-    Loads subscriber timeseries and makes simple growth forecasts
+   Loads subscriber timeseries and makes simple growth forecasts
 
 
 🔹 google_sheets_uploader.py (Optional)
 
-    Uploads final datasets to a Google Sheet using Google API
+   Uploads final datasets to a Google Sheet using Google API
 
 
 
@@ -116,22 +116,22 @@ Google account (for Sheets integration, optional)
 
 🕑 Task Scheduler Setup (Windows)
 
-    We configured Windows Task Scheduler to run updatedaily.bat every day at a specific time:
+ We configured Windows Task Scheduler to run updatedaily.bat every day at a specific time:
     
-    1. Open Task Scheduler
-    
-    
-    2. Create a new task → Name: YouTube Data Update
+   1. Open Task Scheduler
     
     
-    3. Trigger: Daily at your chosen time
+   2. Create a new task → Name: YouTube Data Update
     
     
-    4. Action: Start a program → Browse → Select updatedaily.bat
+   3. Trigger: Daily at your chosen time
+    
+    
+   4. Action: Start a program → Browse → Select updatedaily.bat
     
     
     
-    This ensures your data is always current for the Power BI dashboard.
+   This ensures your data is always current for the Power BI dashboard.
 
 
 ---
@@ -140,31 +140,31 @@ Google account (for Sheets integration, optional)
 
 File: YouTubeAnalyticsProject.pbix
     
-    The dashboard includes:
+The dashboard includes:
     
-    Subscriber and view trends
+   Subscriber and view trends
     
-    Top-performing videos
+   Top-performing videos
     
-    Sentiment analysis charts
+   Sentiment analysis charts
     
-    Forecasted subscriber growth
+   Forecasted subscriber growth
     
-    Filters for date, channel, engagement metrics
+   Filters for date, channel, engagement metrics
     
     
-    Data is auto-refreshed daily by re-running the .bat file and importing the updated .csv files into Power BI.
+   Data is auto-refreshed daily by re-running the .bat file and importing the updated .csv files into Power BI.
 
 
 ---
 
 🔒 Security Notes
 
-    .env and apikey.txt files are not committed to GitHub
+  .env and apikey.txt files are not committed to GitHub
     
-    .gitignore includes .env, credentials, and sensitive info
+  .gitignore includes .env, credentials, and sensitive info
     
-    API keys must be kept private
+  API keys must be kept private
 
 
 
@@ -172,11 +172,11 @@ File: YouTubeAnalyticsProject.pbix
 
 📌 Future Enhancements
 
-    Integrate advanced NLP models for sentiment
+  Integrate advanced NLP models for sentiment
     
-    Schedule Power BI refresh with Power BI Gateway
+  Schedule Power BI refresh with Power BI Gateway
     
-    Add more channels dynamically
+  Add more channels dynamically
 
 
 
@@ -184,13 +184,13 @@ File: YouTubeAnalyticsProject.pbix
 
 🙌 Acknowledgments
 
-    YouTube Data API v3
+  YouTube Data API v3
     
-    TextBlob
+  TextBlob
     
-    Google Sheets API
+  Google Sheets API
 
-    Power BI
+  Power BI
 
 
 
