@@ -9,25 +9,7 @@ This project collects and visualizes YouTube channel statistics (views, subscrib
 
 📁 Project Structure
 
-YOUTUBE_POWERBI_PROJECT/
-│
-├── data/
-│   ├── channel_meta.csv
-│   ├── channel_stats.csv
-│   ├── video_stats.csv
-│   ├── subscriber_timeseries.csv
-│   └── comments_sentiment.csv
-│
-├── .env                         # Contains API keys and secrets (not uploaded to GitHub)
-├── requirements.txt             # All Python dependencies
-├── scraper.py                  # Scrapes video and channel data
-├── sentiment_analysis.py       # Performs sentiment analysis on comments
-├── forecasting.py              # Forecasts subscriber growth (optional)
-├── google_sheets_uploader.py   # Uploads processed data to Google Sheets
-├── updatedaily.bat             # Batch script for scheduled daily updates
-├── README.md                   # This file
-└── YouTubeAnalyticsProject.pbix # Power BI dashboard file
-
+<img width="914" height="547" alt="image" src="https://github.com/user-attachments/assets/3a79d0ec-158c-40d6-94b3-2ca7e1bc0246" />
 
 ---
 
