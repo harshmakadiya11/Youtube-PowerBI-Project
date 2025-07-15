@@ -1,0 +1,26 @@
+# 🔐 Sensitive files
+.env
+apikry.txt
+credentials.json
+
+# 💾 Output/Data files
+/data/
+*.csv
+
+# 💻 Python cache
+__pycache__/
+*.pyc
+
+# ⚙️ Jupyter/IPython junk
+.ipynb_checkpoints/
+*.ipynb
+
+# 💼 IDE/Editor files
+.vscode/
+*.code-workspace
+
+# 📦 Dependency metadata (optional)
+*.egg-info/
+
+# 📊 Power BI Desktop file (optional, large file)
+*.pbix
