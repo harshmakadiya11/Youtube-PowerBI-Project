@@ -13,7 +13,7 @@ This project collects and visualizes YouTube channel statistics (views, subscrib
 
 ---
 
-🚀 Features
+🚀 Features 
 
 ✅ Scrapes up to 30 latest videos per channel
 
@@ -51,20 +51,20 @@ Google account (for Sheets integration, optional)
 
 🧪 Setup Instructions
 
-1. Clone the Repo
+1. Clone the Repo:
 
-git clone https://github.com/your-username/YouTube-analytics-powerbi.git
-cd YouTube-analytics-powerbi
+       git clone https://github.com/your-username/YouTube-analytics-powerbi.git
+       cd YouTube-analytics-powerbi
 
-2. Create a .env File
+2. Create a .env File:
 
-YOUTUBE_API_KEY='your_api_key_here'
+       YOUTUBE_API_KEY='your_api_key_here'
 
-Make sure this file is listed in .gitignore.
+       Make sure this file is listed in .gitignore.
 
-3. Install Dependencies
+3. Install Dependencies:
 
-pip install -r requirements.txt
+       pip install -r requirements.txt
 
 
 ---
@@ -73,26 +73,26 @@ pip install -r requirements.txt
 
 🔹 scraper.py
 
-Fetches channel metadata, video statistics
+    Fetches channel metadata, video statistics
 
-Saves data into CSV files (channel_stats.csv, video_stats.csv, etc.)
+    Saves data into CSV files (channel_stats.csv, video_stats.csv, etc.)
 
 
 🔹 sentiment_analysis.py
 
-Analyzes comments on recent videos
+    Analyzes comments on recent videos
 
-Uses TextBlob for polarity and subjectivity scores
+    Uses TextBlob for polarity and subjectivity scores
 
 
 🔹 forecasting.py
 
-Loads subscriber timeseries and makes simple growth forecasts
+    Loads subscriber timeseries and makes simple growth forecasts
 
 
 🔹 google_sheets_uploader.py (Optional)
 
-Uploads final datasets to a Google Sheet using Google API
+    Uploads final datasets to a Google Sheet using Google API
 
 
 
@@ -102,36 +102,36 @@ Uploads final datasets to a Google Sheet using Google API
 
 ✅ .bat Script
 
-File: updatedaily.bat
+  File: updatedaily.bat
 
-@echo off
-echo Updating YouTube data...
+      @echo off
+      echo Updating YouTube data...
 
-python scraper.py
-python forecasting.py
-python google_sheets_uploader.py
+      python scraper.py
+      python forecasting.py
+      python google_sheets_uploader.py
 
-echo ✅ All scripts executed successfully!
-pause
+      echo ✅ All scripts executed successfully!
+      pause
 
 🕑 Task Scheduler Setup (Windows)
 
-We configured Windows Task Scheduler to run updatedaily.bat every day at a specific time:
-
-1. Open Task Scheduler
-
-
-2. Create a new task → Name: YouTube Data Update
-
-
-3. Trigger: Daily at your chosen time
-
-
-4. Action: Start a program → Browse → Select updatedaily.bat
-
-
-
-This ensures your data is always current for the Power BI dashboard.
+    We configured Windows Task Scheduler to run updatedaily.bat every day at a specific time:
+    
+    1. Open Task Scheduler
+    
+    
+    2. Create a new task → Name: YouTube Data Update
+    
+    
+    3. Trigger: Daily at your chosen time
+    
+    
+    4. Action: Start a program → Browse → Select updatedaily.bat
+    
+    
+    
+    This ensures your data is always current for the Power BI dashboard.
 
 
 ---
@@ -139,32 +139,32 @@ This ensures your data is always current for the Power BI dashboard.
 📈 Power BI Dashboard
 
 File: YouTubeAnalyticsProject.pbix
-
-The dashboard includes:
-
-Subscriber and view trends
-
-Top-performing videos
-
-Sentiment analysis charts
-
-Forecasted subscriber growth
-
-Filters for date, channel, engagement metrics
-
-
-Data is auto-refreshed daily by re-running the .bat file and importing the updated .csv files into Power BI.
+    
+    The dashboard includes:
+    
+    Subscriber and view trends
+    
+    Top-performing videos
+    
+    Sentiment analysis charts
+    
+    Forecasted subscriber growth
+    
+    Filters for date, channel, engagement metrics
+    
+    
+    Data is auto-refreshed daily by re-running the .bat file and importing the updated .csv files into Power BI.
 
 
 ---
 
 🔒 Security Notes
 
-.env and apikey.txt files are not committed to GitHub
-
-.gitignore includes .env, credentials, and sensitive info
-
-API keys must be kept private
+    .env and apikey.txt files are not committed to GitHub
+    
+    .gitignore includes .env, credentials, and sensitive info
+    
+    API keys must be kept private
 
 
 
@@ -172,11 +172,11 @@ API keys must be kept private
 
 📌 Future Enhancements
 
-Integrate advanced NLP models for sentiment
-
-Schedule Power BI refresh with Power BI Gateway
-
-Add more channels dynamically
+    Integrate advanced NLP models for sentiment
+    
+    Schedule Power BI refresh with Power BI Gateway
+    
+    Add more channels dynamically
 
 
 
@@ -184,13 +184,13 @@ Add more channels dynamically
 
 🙌 Acknowledgments
 
-YouTube Data API v3
+    YouTube Data API v3
+    
+    TextBlob
+    
+    Google Sheets API
 
-TextBlob
-
-Google Sheets API
-
-Power BI
+    Power BI
 
 
 
