@@ -154,6 +154,8 @@ The dashboard includes:
     
     
    Data is auto-refreshed daily by re-running the .bat file and importing the updated .csv files into Power BI.
+   <img width="1272" height="800" alt="image" src="https://github.com/user-attachments/assets/fc4381f2-4b81-4528-95f7-fe4bce09c723" />
+
 
 
 ---
